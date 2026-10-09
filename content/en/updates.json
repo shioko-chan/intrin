@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-10-10-llcl-vizdoom",
+    "projectId": "llcl",
+    "date": "2026-10-10",
+    "draft": true,
+    "type": "Experiment note",
+    "title": "Exploring more unseen ViZDoom layouts",
+    "summary": "A V-JEPA-based planner improved exploration coverage over a reactive baseline on held-out randomized key-door maps; task completion remains unproven.",
+    "intro": "We evaluated a planner with a frozen V-JEPA 2.1 visual encoder, retrained action-conditioned dynamics and an eight-step exploration utility head trained on exploratory on-policy failure data. It used RGB observations and actual actions, with position reserved for training labels and evaluation. Weights were fixed during 128-step evaluations, and the planner did not use the failure blacklist.",
+    "verified": "Against a reactive baseline, the planner visited an average of 18.3 more new cells per paired evaluation across 16 held-out maps and three model seeds (48 pairs; reported 95% CI +13.5 to +23.2). Across four sealed core maps and three seeds (12 pairs), the difference was +27.3 cells (+17.7 to +37.0). Each model seed had a positive mean difference on both map sets. On the 16-map set, paired ablations favored the eight-step over a one-step target (+15.1 cells, CI +10.3 to +19.9), exploratory on-policy failure data over no added data (+14.3, +8.9 to +19.8), and that failure data over an equal amount of random-action data (+13.8, +9.4 to +18.1). The corresponding core-map intervals also excluded zero.",
+    "ongoing": "These results measure exploration coverage, not completion of the key-door task. On the four core maps, key collection, door success and exit success were all 0%. The on-policy data came from one collection seed; the third model seed reused its rollout data. The core set has only four maps, and no DreamerV3 comparison or action-ranking test with the retrained dynamics has been reported.",
+    "next": "Proposed: measure key, door and exit completion; repeat data collection with independent seeds; test action ranking under the retrained dynamics; and compare with DreamerV3. These are future checks, not established results."
+  },
+  {
+    "id": "2026-10-07-llcl",
+    "projectId": "llcl",
+    "date": "2026-10-07",
+    "draft": true,
+    "type": "Development note",
+    "title": "Separating diagnostics from results",
+    "summary": "A clear account of the V-JEPA, GRU and planning setup, and what the current evidence can support.",
+    "intro": "This note sets the scope of the LLCL project page. It does not announce a performance improvement. Development diagnostics are useful for understanding a system, but they need further evaluation before they can support a broader result.",
+    "verified": "The existing portfolio includes a selected recording of an earlier frozen JEPA agent in Veloren. It is evidence of that recorded run only. No robust improvement has been demonstrated by the recent development diagnostics.",
+    "ongoing": "The current project combines a V-JEPA visual encoder, learned action-conditioned GRU dynamics and planning with failure feedback. Work is active, and the public description remains at the level of the approach rather than unpublished outcomes. Failures of the assembled system do not show that V-JEPA is inherently flawed.",
+    "next": "Proposed: define reproducible baseline comparisons, repeat evaluation across runs, and report the evaluation conditions alongside any future gains. These are editorial suggestions for the next public report, not completed experiments."
+  },
+  {
+    "id": "2026-10-07-sketchvla",
+    "projectId": "sketchvla",
+    "date": "2026-10-07",
+    "draft": true,
+    "type": "Demo note",
+    "title": "Two views of a drawing task",
+    "summary": "A closer look at the Panda whiteboard capture: what the simulation shows, and what it does not yet establish.",
+    "intro": "The existing demo places a board-front view beside an eye-in-hand view of the same drawing sequence. This is the starting point for describing the MuJoCo / SketchVLA data project on its own terms, separately from LLCL.",
+    "verified": "The recording shows a simulated Panda arm drawing on a whiteboard, with two synchronized camera views. It is shown at 3× playback speed without audio. The footage demonstrates data capture, not the performance of a trained policy.",
+    "ongoing": "The project explores a drawing environment and its VLA data tooling. This preview makes no claim about dataset size, a public dataset release, policy-training success or benchmark performance.",
+    "next": "Proposed: document the data schema, camera alignment and capture-quality checks so that a future release can explain exactly how observations and actions relate. This is a suggested reporting milestone, not a confirmed release schedule."
+  },
+  {
+    "id": "2026-10-07-skymerge",
+    "projectId": "skymerge",
+    "date": "2026-10-07",
+    "draft": true,
+    "type": "Artifact note",
+    "title": "Reading the stitched result",
+    "summary": "The complete SkyMerge mosaic, its output details, and the public implementation behind the image.",
+    "intro": "SkyMerge’s project page brings the published mosaic into focus. The two close-ups are crops of the final stitched image, so they should be read as details of the output rather than as a before-and-after comparison.",
+    "verified": "The public shioko-chan/DOM repository provides the image-stitching implementation. The project’s published mosaic is reused here in a resized full view and two labeled detail crops. It is a visible project artifact, not a quantitative accuracy or speed result.",
+    "ongoing": "This draft records an existing undergraduate project. It does not report new experiments or imply that active development has resumed.",
+    "next": "Proposed: add a reproducible walkthrough if a shareable set of original input images becomes available. Keep input frames, output crops and quantitative measurements explicitly distinguished."
+  }
+]

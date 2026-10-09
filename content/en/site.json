@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "name": "intrin",
+  "author": "Haoran Liu",
+  "description": "Projects, visual results and work-in-progress notes by Haoran Liu, spanning computer vision, robot learning and world models.",
+  "heroTitle": [
+    "Projects in perception",
+    "& embodied intelligence"
+  ],
+  "heroDescription": "Building systems that see, model and act. A record of the projects, the things they produce, and the questions still open.",
+  "personalSite": "https://intrin.cc/",
+  "previewDate": "2026-10-07",
+  "ui": {
+    "projects": "Projects",
+    "updates": "Updates",
+    "personalSite": "Personal site",
+    "draft": "Draft",
+    "projectNotes": "Project notes",
+    "selectedProjects": "Selected projects",
+    "latestUpdates": "Latest updates",
+    "allUpdates": "All updates",
+    "readProject": "Explore project",
+    "readUpdate": "Read update",
+    "verified": "Verified evidence",
+    "ongoing": "Ongoing work",
+    "next": "Proposed next steps",
+    "backToProjects": "All projects",
+    "draftNotice": "Local preview · Content draft",
+    "draftDateNotice": "Dates mark the preparation of these draft notes, not new experiment results."
+  }
+}

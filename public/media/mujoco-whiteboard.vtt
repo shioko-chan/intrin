@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:07.000
+MuJoCo simulation, shown at 3× speed.
+Left: board view. Right: eye-in-hand view.
+
+00:07.000 --> 00:17.000
+A simulated robot guides its pen across a whiteboard.
+Both cameras record the same drawing sequence.
+
+00:17.000 --> 00:24.600
+The pen continues the curved outline.
+This is dataset-capture footage, not a trained-policy benchmark.
